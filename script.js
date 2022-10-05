@@ -90,7 +90,7 @@ function updateCounter() {
 function getRandomNoise(title) {
     const x = "sounds/";
     var y = x + title + getRandomNum() + ".mp3";
-    return y;
+    return y
 }
 
 // Generates a random number based on the length of the sound array and returns it as a number
