@@ -37,9 +37,9 @@ function images() {
     var randomImageNumber = Math.floor(Math.random() * imgArray.length);
     selectedImages = imgArray[randomImageNumber];
     document.getElementById("update").src = 'images/' + selectedImages;
-    console.log(randomImageNumber)
+    console.log(randomImageNumber);
 
-    // Updates the artist credit (ik this is messy asf)
+    // Updates the artist credit
     if (randomImageNumber == 0) {
         document.getElementById("updateArtist").innerHTML = "井Ido";
         document.getElementById("updateArtist").href = pixivLink + "79718750";
