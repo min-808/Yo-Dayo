@@ -1,0 +1,97 @@
+body {
+    background-color: #ffb3ad;
+    height: 100%;
+    width: 100%;
+    font-family: 'Overpass', sans-serif;
+}
+
+@keyframes intro {
+    0% {
+        opacity: 0;
+        /* transform: translateY(-3%); */
+    } 
+    100% {
+        opacity: 1;
+        /* transform: translateY(0%); */
+    }
+}
+
+.total {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Horizontal & Vertical Center */
+    padding: 30px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #ffa29c;
+    background-color: #ffa29c;
+
+    animation-name: intro;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1250ms;
+}
+
+.button, .title, .subtitle {
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.jpn {
+    color: #ff3e30;
+}
+
+.yodayo {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#update {
+    width: 200px;
+    height: 200px;
+    opacity: 0.6;
+    border-radius: 25px;
+    transition: 0.2s;
+}
+
+#update:hover {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+#number {
+    font-weight: bold;
+}
+
+.channel, .vid, .credits {
+    vertical-align: middle;
+    text-align: center;
+    line-height: 30px;
+}
+
+#channelLink, #randomVideo, #statsRedirect, .channel, .vid {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.credits, .inspo {
+    font-weight: bold;
+    font-size: 11px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 15px;
+}
+
+.imgcredit {
+    font-weight: bold;
+    font-size: 14px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 15px;
+}
+
+a:link, a:visited {
+    color: #ff3e30;
+}

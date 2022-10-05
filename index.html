@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+    <title>Yo Dayo!</title>
+    <link rel="icon" type="image/png" href="favicons/icon.png">
+</head>
+
+<body>
+    
+    <div class="total">
+
+        <div class="title">
+            <span class="yodayo">Yo Dayo!</span>
+        </div>
+
+        <div class="subtitle">
+            <span class="jpn">余 だよ！</span>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="button">
+            <input type="image" onclick="updateCounter()" id="update" src="images/transparent.png">
+            <div class="clickTracker">
+                <b>Total Session Counter: </b>
+                <span id="number">0</span>
+            </div>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="channel">
+            Subscribe to 
+            <span id="channelLink"><a href="https://www.youtube.com/channel/UC7fk0CB07ly8oSl0aqKkqFg?sub_confirmation=1" target="_blank" rel="noopener noreferrer">Nakiri Ayame Ch. 百鬼あやめ</a></span>
+        </div>
+
+        <div class="vid">
+            Watch a 
+            <span id="randomVideo"><a href="#" onclick="randomCover()" id="referBack" target="_blank" rel="noopener noreferrer">Random Cover</a></span>
+        </div>
+
+        <br />
+
+        <div class="imgcredit">
+            Art by 
+            <span id="artLink"><a href="https://www.example.com" id="updateArtist" target="_blank" rel="noopener noreferrer">Artist</a></span>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="credits">
+            Website by 
+            <span id="minOsuLink"><a href="https://osu.ppy.sh/users/14481646" target="_blank" rel="noopener noreferrer">Min</a></span>
+        </div>
+
+        <div class="inspo">
+            Inspired by 
+            <span id="inaLink"><a href="https://inanoises.com/" target="_blank" rel="noopener noreferrer">Ina Noises</a></span>
+        </div>
+
+    </div>
+
+</body>
