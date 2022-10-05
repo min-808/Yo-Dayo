@@ -92,6 +92,20 @@ body {
     line-height: 15px;
 }
 
-a:link, a:visited {
+a:link, a:visited, .sourceStyle {
     color: #ff3e30;
+}
+
+.source {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.sourceStyle {
+    font-size: 14px;
+    animation-name: intro;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1250ms;
 }
