@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "cron": "^3.1.7",
+    "express": "^4.21.0"
+  }
+}
