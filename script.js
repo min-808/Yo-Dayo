@@ -1,3 +1,26 @@
+async function inc() {
+    try {
+        const response = await fetch('https://nodejs-serverless-function-express-one-teal.vercel.app/api/counter', {
+            method: 'GET',
+            headers: {
+                "Content-Type": "application/json",
+            }
+        })
+        
+        if (response.ok) { // Ok, 200-299 status code
+            const comeback = await response.json()
+
+            console.log("response is ok: " + comeback["message"])
+        }
+    } catch (error) {
+        console.log(`Something went wrong: ${error}`)
+    }
+}
+
+cron.schedule('*/10 * * * * *', () => {
+    inc()
+})
+
 window.onload = images;
 var initialValue = 1;
 var pixivLink = "https://www.pixiv.net/en/artworks/";
