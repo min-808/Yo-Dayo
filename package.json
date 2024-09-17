@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "express": "^4.21.0",
-    "node-cron": "^3.0.3"
+    "express": "^4.21.0"
   }
 }
