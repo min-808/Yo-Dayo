@@ -1,3 +1,5 @@
+const cron = require('node-cron')
+
 async function inc() {
     try {
         const response = await fetch('https://nodejs-serverless-function-express-one-teal.vercel.app/api/counter', {
